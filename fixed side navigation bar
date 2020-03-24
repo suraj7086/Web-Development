@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> vertical Navigation bar</title>
+    <style>
+        ul{
+            width:25%;
+            background-color:#f1f1f1;
+            list-style-type:none;
+            margin:0px;
+            padding:0px;
+            border:1px solid black;
+            
+            /*it will give it full screen height*/
+            height:100%;
+           /* it will make the bar stick even on scroll*/
+            position:fixed;
+        }
+        li a {
+            display:block;
+            padding:8px 16px;
+            text-decoration: none;
+            color:#000;
+        }
+        li a.active {
+            background-color:green;
+            color:white;  
+        }
+        li a:hover:not(.active)
+        {
+           background-color:#900;
+           color:white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a class="active" href="HelloWorld">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </header>
+</body>
+</html>
